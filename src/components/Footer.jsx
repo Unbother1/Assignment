@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="flex justify-evenly gap-20 ">
       <div>Get the GetResponse App
-        <div className="flex gap-5">
+        <div className="flex gap-5 py-5">
           <div>
             <a href="https://play.google.com/store/apps/details?id=com.implix.getresponse&utm_source=business-page&utm_campaign=footer&pli=1"><svg xmlns="http://www.w3.org/2000/svg" width="117" height="42" viewBox="0 0 234 84">
             <defs><clipPath id="a661a_a"><path fill="none" d="M0 0h234v84H0z" data-name="Rectangle 325"></path></clipPath>
@@ -66,7 +66,7 @@ const Footer = () => {
       </div>
       <div>Follow us
         <div>
-          <ul className="flex items-center gap-2">
+          <ul className="flex items-center gap-2 py-5">
             <li>
             <a href="https://www.facebook.com/GetResponse" className="hover:text-blue-500" data-test="footerSocialLink" aria-label="Facebook" rel="noopener noreferrer nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 15 32" fill="currentColor"><path d="M9.88.01a8.1 8.1 0 0 0-3.13.56c-2.32.93-3.5 3.12-3.5 6.53v3.32H-.01v5.59h3.26v16h6.63v-16h4.51l.6-5.59H9.88V7.91a3.4 3.4 0 0 1 .28-1.66 1.84 1.84 0 0 1 1.75-.73h3V.01h-5z"></path></svg></a>
             </li>
@@ -87,26 +87,33 @@ const Footer = () => {
         </div>
       </div>
       <div>Change the language
-        <div className="relative flex items-center gap-4 w-70 border-2 rounded-xl hover:text-blue-600">
-          <span className="flex items-center px-2 py-2 gap-2 rounded"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 20 20" className="FooterLang_mfooter-world-icon__v2cHa"><path stroke="#717171" stroke-miterlimit="10" stroke-width="1.5" d="M10 18.94c4.973 0 9-4.028 9-9s-4.027-9-9-9-9 4.027-9 9 4.028 9 9 9z"></path><path fill="#717171" d="M15.565 15.505a7.97 7.97 0 0 0 2.153-3.983c-.24.353-.458.48-.608-.292-.15-1.268-1.305-.458-2.055-.915-.772.517-2.52-1.013-2.22.72.457.787 2.46-1.05 1.47.607-.622 1.155-2.317 3.713-2.092 5.033.037 1.927-1.965.405-2.663-.24-.457-1.283-.165-3.525-1.38-4.155-1.32-.053-2.445-.18-2.955-1.65-.315-1.05.33-2.61 1.448-2.865 1.65-1.028 2.242 1.215 3.78 1.245.48-.495 1.785-.66 1.89-1.23-1.013-.18 1.282-.848-.09-1.23-.773.09-1.245.787-.848 1.395-1.485.352-1.522-2.153-2.955-1.358-.037 1.245-2.332.405-.787.15.532-.24-.863-.9-.113-.772.368-.015 1.598-.458 1.268-.75.697-.42 1.267 1.027 1.95-.038.495-.81-.203-.952-.81-.555-.353-.382.607-1.215 1.447-1.582.278-.128.555-.18.75-.165.42.495 1.215.57 1.245-.053a8 8 0 0 0-3.397-.772c-1.71 0-3.346.555-4.703 1.56.368.165.57.367.218.645-.278.81-1.38 1.89-2.333 1.747A8 8 0 0 0 2.2 8.83c.81.277.99.787.825.975-.405.367-.66.862-.787 1.432.255 1.62 1.027 3.105 2.205 4.283 1.485 1.485 3.472 2.317 5.565 2.317s4.057-.825 5.55-2.317zm.788-11.918A8.86 8.86 0 0 1 19 9.94a8.86 8.86 0 0 1-2.647 6.352c-1.688 1.71-3.946 2.648-6.353 2.648s-4.665-.938-6.352-2.648A8.86 8.86 0 0 1 1 9.94c0-2.408.938-4.665 2.648-6.353C5.35 1.892 7.592.94 10 .94s4.665.937 6.353 2.647"></path></svg>
-          English</span>
-          <button onClick={Dropdown} className="px-4 py-2 rounded text-xl">^</button>
-          {isOpen && (
-          <div className="absolute mt-2 bottom-full w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">DE  Deutsch</a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">EN  English</a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">ES  Español</a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">FR  Français</a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">IT  Italiano</a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">PL  Polski</a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">PT  Português</a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">VN  Tiếng Việt</a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">RU  Русский</a>
+        <div className="py-5">
+          <div className="relative flex items-center gap-4 w-70 border-2 rounded-xl hover:text-blue-600">
+            <span className="flex items-center px-2 py-2 gap-2 rounded"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 20 20" className="FooterLang_mfooter-world-icon__v2cHa"><path stroke="#717171" stroke-miterlimit="10" stroke-width="1.5" d="M10 18.94c4.973 0 9-4.028 9-9s-4.027-9-9-9-9 4.027-9 9 4.028 9 9 9z"></path>
+            <path fill="#717171" d="M15.565 15.505a7.97 7.97 0 0 0 2.153-3.983c-.24.353-.458.48-.608-.292-.15-1.268-1.305-.458-2.055-.915-.772.517-2.52-1.013-2.22.72.457.787 2.46-1.05 1.47.607-.622 1.155-2.317 3.713-2.092 5.033.037 1.927-1.965.405-2.663-.24-.457-1.283-.165-3.525-1.38-4.155-1.32-.053-2.445-.18-2.955-1.65-.315-1.05.33-2.61 1.448-2.865 1.65-1.028 2.242 1.215 3.78 1.245.48-.495 1.785-.66 1.89-1.23-1.013-.18 1.282-.848-.09-1.23-.773.09-1.245.787-.848 1.395-1.485.352-1.522-2.153-2.955-1.358-.037 1.245-2.332.405-.787.15.532-.24-.863-.9-.113-.772.368-.015 1.598-.458 1.268-.75.697-.42 1.267 1.027 1.95-.038.495-.81-.203-.952-.81-.555-.353-.382.607-1.215 1.447-1.582.278-.128.555-.18.75-.165.42.495 1.215.57 1.245-.053a8 8 0 0 0-3.397-.772c-1.71 0-3.346.555-4.703 1.56.368.165.57.367.218.645-.278.81-1.38 1.89-2.333 1.747A8 8 0 0 0 2.2 8.83c.81.277.99.787.825.975-.405.367-.66.862-.787 1.432.255 1.62 1.027 3.105 2.205 4.283 1.485 1.485 3.472 2.317 5.565 2.317s4.057-.825 5.55-2.317zm.788-11.918A8.86 8.86 0 0 1 19 9.94a8.86 8.86 0 0 1-2.647 6.352c-1.688 1.71-3.946 2.648-6.353 2.648s-4.665-.938-6.352-2.648A8.86 8.86 0 0 1 1 9.94c0-2.408.938-4.665 2.648-6.353C5.35 1.892 7.592.94 10 .94s4.665.937 6.353 2.647"></path></svg>
+            English</span>
+            <button onClick={Dropdown} className="px-4 py-2 rounded text-xl">^</button>
+            {isOpen && (
+            <div className="absolute mt-2 bottom-full w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">DE  Deutsch</a>
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">EN  English</a>
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">ES  Español</a>
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">FR  Français</a>
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">IT  Italiano</a>
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">PL  Polski</a>
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">PT  Português</a>
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">VN  Tiếng Việt</a>
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-400">RU  Русский</a>
+            </div>
+            )}
           </div>
-          )}
         </div>
       </div>
-      <div>Turn on high contrast</div>
+      <div>Turn on high contrast
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-8" viewBox="0 0 512 512"><path d="M512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256m-350.5-86.1c-12.2-5.2-26.3.4-31.5 12.6s.4 26.3 12.6 31.5l11.9 5.1c17.3 7.4 35.2 12.9 53.6 16.3v50.1c0 4.3-.7 8.6-2.1 12.6l-28.7 86.1c-4.2 12.6 2.6 26.2 15.2 30.4s26.2-2.6 30.4-15.2l24.4-73.2c1.3-3.8 4.8-6.4 8.8-6.4s7.6 2.6 8.8 6.4l24.4 73.2c4.2 12.6 17.8 19.4 30.4 15.2s19.4-17.8 15.2-30.4l-28.7-86.1q-2.1-6.15-2.1-12.6v-50c18.4-3.5 36.3-8.9 53.6-16.3l11.9-5.1c12.2-5.2 17.8-19.3 12.6-31.5s-19.3-17.8-31.5-12.6l-12 5c-26.1 11.2-54.2 17-82.7 17s-56.5-5.8-82.7-17l-11.9-5.1zM256 160c22.1 0 40-17.9 40-40s-17.9-40-40-40-40 17.9-40 40 17.9 40 40 40"></path></svg>
+        </div>
+      </div>
     </div>
   )
 };
