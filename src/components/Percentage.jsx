@@ -3,33 +3,42 @@ import React from 'react'
 const Percentage = () => {
     const percentagelist = [
         {
-            percentage: "100%",
-            description: "average list growth for all paid plans in the first 30 days"
+            ratings: "100%",
+            description: "average list growth for",
+            description1: "all paid plans in the first",
+            description2: "30 days",
         },
         {
-            percentage: "99%",
-            description: "deliverability rate for 160+ countries"
+            ratings: "99%",
+            description: "deliverability rate",
+            description1: "for 160+ countries",
+            description2: "",
         },
         {
-            percentage: "350k+",
-            description: "customers worldwide trust us with their email marketing"
+            ratings: "350k+",
+            description: "customers worldwide",
+            description1: "trust us with their email",
+            description2: "marketing",
         },
         {
-            percentage: "24/7",
-            description: "support from a 5-star rated Customer Success Team"
+            ratings: "24/7",
+            description: "support from a 5-star",
+            description1: "rated Customer Success",
+            description2: "Team",
         },
     ]
   return (
 
     <div>
         
-        <p className="font-bold lg:text-[24px] text-[14px] p-9 text-center">Why GetResponse?</p>
+        <p className="font-bold lg:text-[24px] text-[14px] p-9 lg:text-center text-center lg:justify-center">Why GetResponse?</p>
         <div className='flex'>
             { percentagelist.map ((percent, index) => (
-                <div className="font-bold lg:text-[60] text-[40px] flex mx-2 gap-5">
-                    <div>{percent.percentage}
-                    <p className="text-[14px] font-normal">{percent.description}
-                    </p>
+                <div className="lg:font-bold font-bold lg:text-[60] text-[40px] flex lg:m-20 m-10 lg:text-center text-center lg:justify-center">
+                    <div>{percent.ratings}
+                    <p className="text-[14px] font-normal">{percent.description}</p>
+                    <p className="text-[14px] font-normal">{percent.description1}</p>
+                    <p className="text-[14px] font-normal">{percent.description2}</p>
                     </div>
                 </div>
             ))
