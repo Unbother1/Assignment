@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { GrFormView } from "react-icons/gr";
  
  const Login = () => {
     const [email, setEmail] = useState("")
@@ -62,8 +63,11 @@ import React, { useState } from "react";
                onChange={(e) => setPassword(e.target.value)}
                placeholder="Enter your password"
                className="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-             />
-             <input type="checkbox" onChange={(e) => setIsChecked(e.target.value)}/> <p onClick={togglePassword} className="cursor-pointer">Show Password</p>
+             ></input>
+             <div className="flex gap-80 mx-0">
+               <input type="checkbox" onChange={(e) => setIsChecked(e.target.value)}/>
+               <p onClick={togglePassword} className="cursor-pointer "><GrFormView /></p>
+             </div>
            </div>
            
             { error &&
