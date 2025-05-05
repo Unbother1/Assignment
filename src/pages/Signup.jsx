@@ -9,14 +9,12 @@ const Signup = () => {
 
     const [confirmpassword, setConfirmPassword] = useState("")
 
-    const [checked, setChecked] = useState(false)
-
     const [ShowPassword, setShowPassword] = useState(false)
     const togglePassword = () => {
         setShowPassword(! ShowPassword)
     }
 
-    const [reveal, setReveal] = useState(true)
+    const [reveal, setReveal] = useState(false)
     const displayPassword = () => {
         setReveal(!reveal)
     }
@@ -44,6 +42,7 @@ const Signup = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder='Please enter your password'
+                    onin
                     className='border-2 rounded-lg w-full pr-10 pl-3 py-2'/>
                     <span onClick={togglePassword} className='absolute right-3 top-1/4 cursor-pointer'><GrFormView /></span> 
                 </div>
