@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LiaToggleOffSolid } from "react-icons/lia";
 
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,8 +10,8 @@ const Footer = () => {
     <div className="flex justify-evenly gap-20 ">
       <div>Get the GetResponse App
         <div className="flex gap-5 py-5">
-          <div>
-            <a href="https://play.google.com/store/apps/details?id=com.implix.getresponse&utm_source=business-page&utm_campaign=footer&pli=1"><svg xmlns="http://www.w3.org/2000/svg" width="117" height="42" viewBox="0 0 234 84">
+          <div className="hover:to-blue-600">
+            <a href="https://play.google.com/store/apps/details?id=com.implix.getresponse&utm_source=business-page&utm_campaign=footer&pli=1"><svg xmlns="http://www.w3.org/2000/svg" width="117" height="42" viewBox="0 0 234 84" >
             <defs><clipPath id="a661a_a"><path fill="none" d="M0 0h234v84H0z" data-name="Rectangle 325"></path></clipPath>
             <clipPath id="a661a_b"><path fill="none" d="M27.501 21.19h178.997v41.619H27.501z" data-name="Rectangle 578"></path></clipPath>
             </defs><g data-name="Group 626"><g data-name="Group 523"><g clip-path="url(#a661a_a)" data-name="Group 522">
@@ -66,7 +67,7 @@ const Footer = () => {
       </div>
       <div>Follow us
         <div>
-          <ul className="flex items-center gap-2 py-5">
+          <ul className="relative flex items-center gap-2 py-5">
             <li>
             <a href="https://www.facebook.com/GetResponse" className="hover:text-blue-500" data-test="footerSocialLink" aria-label="Facebook" rel="noopener noreferrer nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 15 32" fill="currentColor"><path d="M9.88.01a8.1 8.1 0 0 0-3.13.56c-2.32.93-3.5 3.12-3.5 6.53v3.32H-.01v5.59h3.26v16h6.63v-16h4.51l.6-5.59H9.88V7.91a3.4 3.4 0 0 1 .28-1.66 1.84 1.84 0 0 1 1.75-.73h3V.01h-5z"></path></svg></a>
             </li>
@@ -110,8 +111,9 @@ const Footer = () => {
         </div>
       </div>
       <div>Turn on high contrast
-        <div>
+        <div className="flex gap-5">
           <svg xmlns="http://www.w3.org/2000/svg" className="w-8" viewBox="0 0 512 512"><path d="M512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256m-350.5-86.1c-12.2-5.2-26.3.4-31.5 12.6s.4 26.3 12.6 31.5l11.9 5.1c17.3 7.4 35.2 12.9 53.6 16.3v50.1c0 4.3-.7 8.6-2.1 12.6l-28.7 86.1c-4.2 12.6 2.6 26.2 15.2 30.4s26.2-2.6 30.4-15.2l24.4-73.2c1.3-3.8 4.8-6.4 8.8-6.4s7.6 2.6 8.8 6.4l24.4 73.2c4.2 12.6 17.8 19.4 30.4 15.2s19.4-17.8 15.2-30.4l-28.7-86.1q-2.1-6.15-2.1-12.6v-50c18.4-3.5 36.3-8.9 53.6-16.3l11.9-5.1c12.2-5.2 17.8-19.3 12.6-31.5s-19.3-17.8-31.5-12.6l-12 5c-26.1 11.2-54.2 17-82.7 17s-56.5-5.8-82.7-17l-11.9-5.1zM256 160c22.1 0 40-17.9 40-40s-17.9-40-40-40-40 17.9-40 40 17.9 40 40 40"></path></svg>
+          <a href="#" className="py-5"><LiaToggleOffSolid /></a>
         </div>
       </div>
     </div>
