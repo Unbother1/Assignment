@@ -1,33 +1,12 @@
-import { useState } from "react";
+import React from 'react'
+import UserCards from '../components/UserCards'
 
-function User () {
-    const [count, setCount] = useState(0);
-    const Add = () => {
-        setCount( count + 1);
-    }
-    const Deduct = () => {
-        if (count > 0) {
-            setCount( count - 1);
-        }
-        
-    }
-    const Reset = () => {
-        setCount(0)
-    }
-    return (
-        <div className="p-[200px] w-fit flex gap-3">
-            
-            <button onClick={Deduct} className="py-2 px-6 bg-red-400 rounded-md text-white font-semibold shadow-lg hover:bg-red-300" >Remove</button>
-            
-            <span className="text-3xl font-bold">{count}</span>
-            
-            <button onClick={Add} className="py-2 px-6 bg-green-400 rounded-md text-white font-semibold shadow-lg hover:bg-green-300">Add</button>
-            
-            {count > 0 && (
-            <button onClick={Reset} className="py-2 px-6 bg-blue-400 rounded-md text-white font-semibold shadow-lg hover:bg-blue-300">Reset</button>
-        )}
-            
-        </div>
-    )
+const user = () => {
+  return (
+    <section className='flex flex-wrap gap-4 h-full bg-gradient-to-r from-purple-500 via-blue-600 to-white p-[50px]'>
+        <UserCards />
+    </section>
+  )
 }
-export default User;
+
+export default user
