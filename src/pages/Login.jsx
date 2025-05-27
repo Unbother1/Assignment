@@ -2,8 +2,9 @@ import axios from "axios";
 import React, { useState } from "react";
 import { GrFormView } from "react-icons/gr";
 import { Link, Navigate, useNavigate } from "react-router-dom";
+import { useUser } from "../context/UserContext";
  
- const Login = () => {
+ const Login = ( {setFirstName, setUserEmail} ) => {
     const [username, setUsername] = useState("")
 
     const [password, setPassword] = useState("")
@@ -17,6 +18,8 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 
    
     const Navigate = useNavigate()
+
+    const { setGender } = useUser();
 
 
     const verify = async (e) => {
@@ -33,7 +36,11 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
         setLoading(false)
       }, 5000);
       setLoading(true);
+
       console.log(response);
+      setFirstName(response.data.firstName)
+      setUserEmail(response.data.email)
+      setGender(response.data.gender)
 
       } catch(error) {
         console.error("error", error);

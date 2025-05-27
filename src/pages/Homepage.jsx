@@ -1,18 +1,30 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Navbar from "../components/Navbar";
-import HeroSection from "../components/HeroSection";
+// import HeroSection from "../components/HeroSection";
 import Footer from "../components/Footer";
 import StaffCart from "../components/StaffCart";
 import Cart from "../components/Cart";
 import Percentage from "../components/Percentage";
 import LeaderCart from "../components/LeaderCart";
+import Loading from "../components/Loading";
+
+const HeroSection = React.lazy(
+    () => 
+         new Promise((resolve) => {
+            setTimeout(() => {
+                resolve (import("../components/HeroSection"));
+            }, 5000);
+         })
+        );
 
 
 const Homepage = () => {
   return (
     <div>
-      <Navbar />
-      <HeroSection />
+      {/* <Navbar /> */}
+      <Suspense fallback = {<Loading/>} >
+        <HeroSection />
+      </Suspense >
       <div className="flex">
         <Percentage />
       </div>

@@ -29,9 +29,11 @@ const Percentage = () => {
     ]
   return (
 
-    <div>
+    <div className='items-center justify-center'>
         
-        <p className="font-bold lg:text-[24px] text-[14px] p-9 lg:text-center text-center lg:justify-center">Why GetResponse?</p>
+        <p className="font-bold lg:text-[24px] text-[14px] p-9 lg:text-center text-center lg:justify-center">
+            Why GetResponse?
+        </p>
         <div className='flex'>
             { percentagelist.map ((percent, index) => (
                 <div className="lg:font-bold font-bold lg:text-[60] text-[40px] flex lg:m-20 m-10 lg:text-center text-center lg:justify-center">

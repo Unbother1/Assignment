@@ -1,6 +1,15 @@
-import React from 'react'
+import Aos from 'aos'
+import React, { useEffect } from 'react'
+import "aos/dist/aos.css";
 
 const LeaderCart = () => {
+
+    useEffect(() => {
+        Aos.init();
+    }, []); 
+
+
+
     const leaderlist = [
         {
             name: "Owolabi",
@@ -47,7 +56,7 @@ const LeaderCart = () => {
     ]
 
   return (
-    <div>
+    <div data-aos="fade-right" data-aos-duration="3000" >
         <h1 className='text-3xl font-bold'>OUR LEADERS</h1>
         <section className='flex m-auto mt-10'>
             {leaderlist.map((leader, index) => (
